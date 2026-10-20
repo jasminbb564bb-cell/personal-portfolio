@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Inter:wght@300;400&display=swap');
+
+:root { --paper:#f4f1ec; --ink:#3e3b38; --muted:#716d68; --line:rgba(62,59,56,.45); }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--paper); font-family:"Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif; font-weight:400; letter-spacing:.08em; background-image:radial-gradient(rgba(94,85,76,.08) .55px, transparent .7px), linear-gradient(112deg, rgba(255,255,255,.5), transparent 32%, rgba(217,208,198,.15)); background-size:7px 7px,100% 100%; }
+body:before { content:""; position:fixed; inset:0; pointer-events:none; opacity:.22; background:linear-gradient(120deg, transparent 0 42%, rgba(118,107,95,.17) 43%, transparent 44% 67%, rgba(255,255,255,.55) 68%, transparent 70%); mix-blend-mode:multiply; }
+a { color:inherit; text-decoration:none; }
+.site-header { display:flex; justify-content:space-between; align-items:center; padding:38px 4vw 0; font:400 10px/1 "DM Mono", monospace; letter-spacing:.24em; position:relative; z-index:1; }
+.main-nav { display:flex; align-items:center; gap:34px; text-transform:lowercase; }
+.nav-disabled { color:var(--muted); opacity:.75; cursor:default; }
+.nav-rule { width:31px; border-top:1px solid var(--line); margin-left:8px; }
+.locale-switcher { display:flex; gap:7px; letter-spacing:.18em; }
+button { color:inherit; background:none; border:0; padding:0; font:inherit; letter-spacing:inherit; cursor:pointer; }
+.locale:not(.is-active) { opacity:.55; }
+.hero { min-height:650px; padding:205px 0 0 11%; position:relative; }
+.hero-copy { max-width:520px; }
+.eyebrow { display:none; }
+h1,h2,p { margin:0; font-weight:400; }
+h1 { font-size:clamp(30px,3vw,45px); letter-spacing:.2em; line-height:1.45; }
+.hero-lead { margin-top:25px; font-size:16px; letter-spacing:.24em; color:var(--muted); }
+.discipline { margin-top:21px; font:300 14px/1.5 "DM Mono", monospace; letter-spacing:.11em; color:var(--muted); }
+.discipline span { padding:0 5px; }
+.scroll-cue { position:absolute; left:8%; bottom:57px; width:20px; height:66px; border-left:1px solid var(--line); font:300 18px/1 "DM Mono", monospace; }
+.scroll-cue span { position:absolute; bottom:-3px; left:-6px; }
+.projects { width:86%; max-width:1340px; margin:0 auto; }
+.project { margin-bottom:92px; }
+.project-media { margin:0; aspect-ratio:3.55/1; overflow:hidden; background:#ddd8d2; }
+.project-inimu .project-media { aspect-ratio:898/367; }
+.project-path .project-media { aspect-ratio:898/228; }
+.project-media img { width:100%; height:100%; display:block; object-fit:cover; filter:saturate(.78) contrast(.96); }
+.project-meta { position:relative; padding:28px 4px 0; min-height:170px; }
+.project-index { display:flex; gap:24px; align-items:center; font:400 9px/1 "DM Mono",monospace; letter-spacing:.18em; color:var(--muted); }
+.project-index i { width:34px; border-top:1px solid var(--line); }
+h2 { margin-top:16px; font-size:39px; letter-spacing:.16em; line-height:1; }
+.project-description { margin-top:18px; font-size:13px; line-height:2; letter-spacing:.16em; color:var(--muted); }
+.project-link { position:absolute; right:0; top:64px; display:flex; align-items:center; gap:25px; font:400 9px/1 "DM Mono",monospace; letter-spacing:.16em; color:var(--muted); }
+.project-link i { width:32px; border-top:1px solid var(--line); }
+.site-footer { display:flex; justify-content:space-between; padding:35px 4vw 40px; font:400 9px "DM Mono",monospace; color:var(--muted); letter-spacing:.18em; }
+@media (max-width:700px) { .site-header { padding:24px 6vw 0; align-items:flex-start; } .wordmark { font-size:9px; } .main-nav { gap:13px; flex-wrap:wrap; justify-content:flex-end; max-width:190px; line-height:1.5; } .main-nav a,.nav-disabled { display:none; } .nav-rule { width:24px; margin-left:2px; } .hero { min-height:500px; padding:155px 8vw 0; } h1 { font-size:29px; letter-spacing:.14em; } .hero-lead { font-size:13px; line-height:2; letter-spacing:.16em; } .discipline { font-size:11px; letter-spacing:.05em; white-space:nowrap; } .scroll-cue { left:8vw; bottom:45px; height:48px; } .projects { width:auto; margin:0 6vw; } .project { margin-bottom:70px; } .project-media { aspect-ratio:1.72/1; } .project-meta { padding-top:21px; min-height:190px; } .project-index { gap:14px; font-size:8px; } h2 { font-size:29px; margin-top:17px; } .project-description { font-size:11px; line-height:2; letter-spacing:.1em; } .project-link { position:relative; top:auto; right:auto; margin-top:26px; justify-content:flex-start; } .site-footer { padding:15px 6vw 28px; } }
+@media (min-width:701px) and (max-width:1000px) { .hero { min-height:560px; padding-top:170px; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }

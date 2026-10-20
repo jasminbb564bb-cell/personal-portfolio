@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="inimu Web Experience Redesign — ポートフォリオ詳細">
+  <title>inimu / Web Experience Redesign</title>
+  <link rel="stylesheet" href="inimu.css">
+  <script defer src="inimu.js"></script>
+</head>
+<body>
+  <header class="detail-header">
+    <a class="wordmark" href="./index.html">PORTFOLIO / 2026</a>
+    <nav aria-label="ページナビゲーション">
+      <a href="./index.html#work" data-i18n="back">BACK TO WORK</a>
+      <span class="header-rule" aria-hidden="true"></span>
+      <button class="locale is-active" type="button" data-lang="ja" aria-pressed="true">JP</button>
+      <span>/</span>
+      <button class="locale" type="button" data-lang="en" aria-pressed="false">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero" id="overview" aria-labelledby="page-title">
+      <div class="hero-info">
+        <p class="section-label">STUDENT PROJECT / 01</p>
+        <p class="hero-title">inimu</p>
+        <p class="hero-kicker" data-i18n="heroKicker">Web Experience Redesign</p>
+        <h1 id="page-title" data-i18n="heroStatementShort">選択する前に、<br>世界観に引き込む。</h1>
+        <p class="status-note"><span class="tag fact">CASE STUDY</span> <span data-i18n="overviewFact">企画提案書と公開サイトをもとにした、非公式の改善提案</span></p>
+      </div>
+      <figure class="hero-image"><img src="assets/inimu.jpg" alt="木造の空間に掛かる白い暖簾"></figure>
+    </section>
+
+    <section class="case-section overview-section" aria-labelledby="overview-title">
+      <div class="section-heading"><span>01</span><h2 id="overview-title">PROJECT OVERVIEW</h2></div>
+      <div class="overview-grid">
+        <div><p class="kicker" data-i18n="overviewLeadLabel">PROJECT</p><p class="large-copy" data-i18n="overviewLead">浅草のフレグランス体験ブランド inimu のWeb体験再設計。</p></div>
+        <dl class="fact-list">
+          <div><dt data-i18n="fieldPurpose">PURPOSE</dt><dd data-i18n="purpose">体験の価値を伝え、予約につながる導線をつくる</dd></div>
+          <div><dt>FOCUS</dt><dd data-i18n="focus">ブランド体験の演出 / SHOP・EXPERIENCEの相互回遊</dd></div>
+          <div><dt>STATUS</dt><dd data-i18n="status">公開サイトで実装済み。効果は未検証。</dd></div>
+          <div><dt>ROLE / PERIOD</dt><dd data-i18n="unconfirmed">資料からは未確認</dd></div>
+        </dl>
+      </div>
+      <p class="source-note" data-i18n="sourceNote">記載内容は、既存の企画提案書・公開サイト・リポジトリ内資料で確認できた範囲に限定しています。</p>
+    </section>
+
+    <section class="case-section" aria-labelledby="research-title">
+      <div class="section-heading"><span>02</span><h2 id="research-title">RESEARCH &amp; INSIGHT</h2></div>
+      <div class="split-grid research-grid">
+        <div class="evidence-block"><span class="tag fact">FACT / OBSERVATION</span><h3 data-i18n="researchFactTitle">旧サイトで確認できたこと</h3><p data-i18n="researchFact">商品・体験・素材・地域・職人など、伝える価値が複数あった。提案書では、SHOPとEXPERIENCEの間に、もう一方へ進む入口が少ないと整理されている。</p><p class="evidence-note" data-i18n="researchFactNote">「見せる順番がずれている」は、ここから導いた分析上の評価であり、観察事実そのものではない。</p></div>
+        <div class="evidence-block"><span class="tag insight">INSIGHT / UX HYPOTHESIS</span><h3 data-i18n="researchInsightTitle">主役になった目的の外側へ、自然に気づけるか。</h3><p data-i18n="researchInsight">図と地は、見る対象と背景の関係を捉える知覚心理学の考え方。SHOPを目的に訪れた人にはSHOPが図となり、EXPERIENCEは地になりやすい可能性がある。</p><p data-i18n="researchInsightSecond">逆の場合も同じ。そこで、目的を達成した後にもう一方の価値へ気づける、控えめな導線を考えた。</p><p class="evidence-note" data-i18n="researchInsightNote">これは図と地の概念をUXへ応用した仮説であり、購買やページ遷移の変化を証明するものではない。</p></div>
+      </div>
+      <p class="quiet-note" data-i18n="researchNote">旧サイトの確認内容と、そこからの分析・仮説を分けて記載しています。実物の旧サイト画面や当時のワイヤーフレームは再現していません。</p>
+    </section>
+
+    <section class="case-section iteration-section" aria-labelledby="iteration-title">
+      <div class="section-heading"><span>03</span><h2 id="iteration-title">DESIGN ITERATION</h2></div>
+      <div class="iteration-intro"><span class="tag decision">DESIGN DECISION</span><h3 data-i18n="iterationTitle">選択より先に、inimuの世界観へ引き込む。</h3><p data-i18n="iterationText">2ドア案を廃止した理由は、クリック導線の改善だけではない。情報や目的を選ぶ前に強い第一印象をつくり、訪問者をinimuの世界へ引き込むために、イントロダクションを先に置いた。</p></div>
+      <div class="iteration-compare" aria-label="Initial concept and final design comparison">
+        <article class="iteration-option"><span class="tag concept">INITIAL CONCEPT / 初期案</span><h3>TOP</h3><div class="option-path"><strong>TOP</strong><i aria-hidden="true">→</i><strong>SHOP / EXPERIENCE</strong></div><p data-i18n="initialConceptNote">制作途中に検討した案。最初に2つのドアから目的を選ばせる。</p></article>
+        <article class="iteration-option iteration-option--final"><span class="tag decision">FINAL DESIGN / 最終案</span><h3>INTRODUCTION</h3><div class="option-path"><strong>INTRODUCTION</strong><i aria-hidden="true">→</i><strong>SHOP / EXPERIENCE</strong></div><p data-i18n="finalDesignNote">世界観を体験した後に、目的に応じて分岐する。公開サイトで実装済み。</p></article>
+      </div>
+      <p class="tagged-note"><span class="tag hypothesis">HYPOTHESIS</span> <span data-i18n="iterationHypothesis">イントロダクションによる没入感の向上や、その後の行動変化は未検証。</span></p>
+    </section>
+
+    <section class="case-section ia-section" aria-labelledby="ia-title">
+      <div class="section-heading"><span>04</span><h2 id="ia-title">UX &amp; INFORMATION ARCHITECTURE</h2></div>
+      <div class="ia-intro"><p class="large-copy" data-i18n="iaLead">ブランド体験の演出と、相互回遊の設計を分けて考える。</p><p data-i18n="iaText">イントロダクションは、inimuの世界へ引き込むための演出。SHOP / EXPERIENCEの導線は、目的を果たしたあとに別の価値へ気づけるようにするためのUX設計。</p></div>
+      <div class="ia-diagram" role="img" aria-label="INTRODUCTIONからSHOPとEXPERIENCEへ分岐し、相互回遊する情報設計">
+        <svg class="ia-map" viewBox="0 0 760 340" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <defs><marker id="ia-arrow" viewBox="0 0 6 6" refX="5" refY="3" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#3e3b38" stroke-width="1.2"/></marker></defs>
+          <g class="ia-lines" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="miter">
+            <path d="M380 92V142M380 142H190V190M380 142H570V190"/>
+            <path d="M190 252C190 300 570 300 570 252" marker-end="url(#ia-arrow)"/>
+            <path d="M570 252C570 286 190 286 190 252" marker-end="url(#ia-arrow)"/>
+          </g>
+          <g class="ia-svg-node">
+            <rect x="255" y="38" width="250" height="54"/>
+            <rect x="70" y="190" width="240" height="62"/>
+            <rect x="450" y="190" width="240" height="62"/>
+          </g>
+          <g class="ia-svg-labels" text-anchor="middle">
+            <text x="380" y="62">INTRODUCTION</text><text x="380" y="81" data-i18n="introNode">世界観への没入</text>
+            <text x="190" y="218">SHOP</text><text x="190" y="239" data-i18n="shopNode">香りを選ぶ</text>
+            <text x="570" y="218">EXPERIENCE</text><text x="570" y="239" data-i18n="experienceNode">香りをつくる</text>
+          </g>
+        </svg>
+        <p class="ia-loop"><span aria-hidden="true">↔</span> <span data-i18n="loopText">相互発見・新しい回遊</span></p>
+        <p class="ia-skip-note"><span>SKIP INTRO</span> <span data-i18n="skipIntroNote">イントロダクションはスキップ可能。目的が明確な訪問者は、すぐにSHOP / EXPERIENCEへ進める。</span></p>
+      </div>
+      <div class="role-grid"><div><span class="tag decision">BRAND EXPERIENCE</span><p data-i18n="brandRole">映像・情景・テキストで、最初の接点をブランド体験として演出する。</p></div><div><span class="tag decision">UX DESIGN</span><p data-i18n="uxRole">SHOPからEXPERIENCE、EXPERIENCEからSHOPへ、次の発見を静かな一行で示す。</p></div></div>
+    </section>
+
+    <section class="case-section final-section" aria-labelledby="final-title">
+      <div class="section-heading"><span>05</span><h2 id="final-title">FINAL DESIGN</h2></div>
+      <p class="large-copy" data-i18n="finalLead">思想を、画面の位置と静かな一行で実装する。</p>
+      <div class="screen-grid">
+        <figure class="screen screen-wide intro-screen"><img src="assets/inimu/scene-04-atelier-final.png" alt="制作中のイントロダクション映像に使用されたScene 04の画面素材"><figcaption><b>INTRODUCTION / SCENE 04</b><span data-i18n="screenIntro">制作中のイントロダクション素材。世界観を先に体験させる。</span></figcaption></figure>
+        <figure class="screen screen-wide top-screen"><img src="assets/inimu/site-top-choice.jpg" alt="イントロダクション後のSHOPとEXPERIENCE選択画面"><figcaption><b>TOP / BRANCH</b><span data-i18n="screenTop">イントロダクションの後に、SHOP / EXPERIENCEへ分岐する。</span></figcaption></figure>
+        <figure class="screen"><img src="assets/inimu/site-shop-signatures.jpg" alt="SHOPトップのTWO SIGNATURES"><figcaption><b>SHOP</b><span data-i18n="screenShop">HATENKOとWANOWAを入口に、香りを探す。</span></figcaption></figure>
+        <figure class="screen"><img src="assets/inimu/site-exhibition-hatenko.jpg" alt="HATENKOの展示室"><figcaption><b>EXHIBITION</b><span data-i18n="screenExhibition">展示から、商品・STORY・ブランドへ。</span></figcaption></figure>
+        <figure class="screen loop-screen"><img src="assets/inimu/site-shop-to-experience.jpg" alt="SHOPからEXPERIENCEへの導線"><figcaption><b>SHOP → EXPERIENCE</b><span data-i18n="screenShopToExp">見つけたあとに、つくるへ。</span></figcaption></figure>
+        <figure class="screen loop-screen"><img src="assets/inimu/site-experience-to-shop.jpg" alt="EXPERIENCEからSHOPへの導線"><figcaption><b>EXPERIENCE → SHOP</b><span data-i18n="screenExpToShop">つくったあとに、出会うへ。予約の流れは遮らない。</span></figcaption></figure>
+      </div>
+      <p class="source-note" data-i18n="finalNote">掲載画像は画面キャプチャと制作中のScene 04素材です。実際の操作体験は公開サイトで確認できます。</p>
+      <p class="live-site"><a href="https://jasminbb564bb-cell.github.io/inimu-workshop/" target="_blank" rel="noopener" data-i18n="liveSite">LIVE SITE / 公開サイトを確認する ↗</a></p>
+    </section>
+
+    <section class="case-section validation-section" aria-labelledby="validation-title">
+      <div class="section-heading"><span>06</span><h2 id="validation-title">VALIDATION &amp; NEXT STEPS</h2></div>
+      <div class="validation-grid">
+        <div><span class="tag fact">PROPOSAL SITE</span><h3 data-i18n="implementedTitle">提案サイトに導線を実装</h3><p data-i18n="implementedText">イントロダクション、SHOP / EXPERIENCEの分岐、展示・STORY・公式ストアへのリンク、相互回遊の導線を提案サイトに実装。</p></div>
+        <div><span class="tag hypothesis">UNVERIFIED</span><h3 data-i18n="unverifiedTitle">効果はまだ測っていない</h3><p data-i18n="unverifiedText">没入感、相互回遊率、SHOPとEXPERIENCEの両方に触れた割合、予約数・売上などは未計測。</p></div>
+      </div>
+      <div class="next-steps"><span class="tag next">NEXT</span><div class="validation-plans"><div><b>QUANTITATIVE / GA4など</b><p data-i18n="nextOne">計測設定後に、イントロダクション完了率・スキップ率、SHOP / EXPERIENCE間の遷移率を確認する。</p></div><div><b>POST-EXPERIENCE SURVEY</b><p data-i18n="nextThree">体験後アンケートで、来店目的・新しく知ったもの・ワークショップ体験の評価を確かめる。</p></div><div><b>QUALITATIVE USER RESEARCH</b><p data-i18n="nextFour">定性的なユーザー調査で、第一印象・没入感・押しつけ感を確認する。</p></div></div></div>
+      <p class="closing-line" data-i18n="closing">成果はまだ測っていない。だから、確かめる方法を先に決めておく。</p>
+    </section>
+  </main>
+  <footer class="detail-footer"><a href="./index.html">← BACK TO PORTFOLIO</a><span>inimu / CASE STUDY</span></footer>
+</body>
+</html>

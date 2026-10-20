@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="余白に、意図を。課題を読み解き、体験を設計するポートフォリオ。">
+  <title>PORTFOLIO / 2026</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Portfolio home">PORTFOLIO / 2026</a>
+    <nav class="main-nav" aria-label="メインナビゲーション">
+      <a href="#work" data-i18n="navWork">WORK</a>
+      <span class="nav-disabled" aria-label="About is not available yet" data-i18n="navAbout">ABOUT</span>
+      <span class="nav-disabled" aria-label="Contact is not available yet" data-i18n="navContact">CONTACT</span>
+      <span class="nav-rule" aria-hidden="true"></span>
+      <div class="locale-switcher" aria-label="Language selector">
+        <button class="locale is-active" type="button" data-lang="ja" aria-pressed="true">JP</button>
+        <span aria-hidden="true">/</span>
+        <button class="locale" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">PORTFOLIO 2026</p>
+        <h1 id="hero-title" data-i18n="heroTitle">余白に、意図を。</h1>
+        <p class="hero-lead" data-i18n="heroLead">課題を読み解き、体験を設計する。</p>
+        <p class="discipline">Web Design <span>/</span> UX <span>/</span> Digital Strategy</p>
+      </div>
+      <a class="scroll-cue" href="#work" aria-label="作品一覧へ移動"><span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="projects" id="work" aria-label="Projects">
+      <article class="project project-inimu">
+        <a href="./inimu.html" aria-label="inimu project details"><figure class="project-media"><img src="assets/inimu.jpg" alt="木造の空間に掛かる白い暖簾" loading="eager"></figure></a>
+        <div class="project-meta">
+          <div class="project-index"><span>01</span><i aria-hidden="true"></i><span data-i18n="inimuCategory">BRAND / WEB / UX</span></div>
+          <h2>inimu</h2>
+          <p class="project-description" data-i18n="inimuDescription">香りのある暮らしを、日常に。<br>ブランド設計 / Webデザイン / 体験設計</p>
+          <a class="project-link" href="./inimu.html" aria-label="View inimu project"><span data-i18n="viewProject">VIEW PROJECT</span><i aria-hidden="true"></i></a>
+        </div>
+      </article>
+
+      <article class="project project-path">
+        <figure class="project-media"><img src="assets/path.jpg" alt="淡い色の山々を抜ける一本の道" loading="lazy"></figure>
+        <div class="project-meta">
+          <div class="project-index"><span>02</span><i aria-hidden="true"></i><span data-i18n="pathCategory">DIGITAL EXPERIENCE</span></div>
+          <h2>The path...</h2>
+          <p class="project-description" data-i18n="pathDescription">旅の不安を、ひとつずつ解いていく。<br>旅行支援アプリ / UX設計 / Web開発</p>
+          <span class="project-link" aria-label="The path project is coming soon"><span data-i18n="viewProject">VIEW PROJECT</span><i aria-hidden="true"></i></span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>© 2026</span><span>PORTFOLIO</span></footer>
+</body>
+</html>
