@@ -40,7 +40,7 @@
           <div><dt data-i18n="fieldPurpose">PURPOSE</dt><dd data-i18n="purpose">体験の価値を伝え、予約につながる導線をつくる</dd></div>
           <div><dt>FOCUS</dt><dd data-i18n="focus">ブランド体験の演出 / SHOP・EXPERIENCEの相互回遊</dd></div>
           <div><dt>STATUS</dt><dd data-i18n="status">公開サイトで実装済み。効果は未検証。</dd></div>
-          <div><dt>ROLE / PERIOD</dt><dd data-i18n="unconfirmed">資料からは未確認</dd></div>
+          <div><dt>ROLE</dt><dd data-i18n="role">企画、リサーチ、情報設計、UIデザイン、実装</dd></div>
         </dl>
       </div>
       <p class="source-note" data-i18n="sourceNote">記載内容は、既存の企画提案書・公開サイト・リポジトリ内資料で確認できた範囲に限定しています。</p>
@@ -49,8 +49,8 @@
     <section class="case-section" aria-labelledby="research-title">
       <div class="section-heading"><span>02</span><h2 id="research-title">RESEARCH &amp; INSIGHT</h2></div>
       <div class="split-grid research-grid">
-        <div class="evidence-block"><span class="tag fact">FACT / OBSERVATION</span><h3 data-i18n="researchFactTitle">旧サイトで確認できたこと</h3><p data-i18n="researchFact">商品・体験・素材・地域・職人など、伝える価値が複数あった。提案書では、SHOPとEXPERIENCEの間に、もう一方へ進む入口が少ないと整理されている。</p><p class="evidence-note" data-i18n="researchFactNote">「見せる順番がずれている」は、ここから導いた分析上の評価であり、観察事実そのものではない。</p></div>
-        <div class="evidence-block"><span class="tag insight">INSIGHT / UX HYPOTHESIS</span><h3 data-i18n="researchInsightTitle">主役になった目的の外側へ、自然に気づけるか。</h3><p data-i18n="researchInsight">図と地は、見る対象と背景の関係を捉える知覚心理学の考え方。SHOPを目的に訪れた人にはSHOPが図となり、EXPERIENCEは地になりやすい可能性がある。</p><p data-i18n="researchInsightSecond">逆の場合も同じ。そこで、目的を達成した後にもう一方の価値へ気づける、控えめな導線を考えた。</p><p class="evidence-note" data-i18n="researchInsightNote">これは図と地の概念をUXへ応用した仮説であり、購買やページ遷移の変化を証明するものではない。</p></div>
+        <div class="evidence-block"><span class="tag fact">FACT / OBSERVATION</span><h3 data-i18n="researchFactTitle">旧サイトで確認できたこと</h3><p data-i18n="researchFact">商品・体験・素材・地域・職人など、伝える価値が複数あった。提案書では、SHOPとEXPERIENCEの間に、もう一方へ進む入口が少ないと整理されている。</p></div>
+        <div class="evidence-block"><span class="tag insight">INSIGHT / UX HYPOTHESIS</span><h3 data-i18n="researchInsightTitle">主役になった目的の外側へ、自然に気づけるか。</h3><p data-i18n="researchInsight">図と地は、見る対象と背景の関係を捉える知覚心理学の考え方。SHOPを目的に訪れた人にはSHOPが図となり、EXPERIENCEは地になりやすい可能性がある。</p><p data-i18n="researchInsightSecond">逆の場合も同じ。そこで、目的を達成した後にもう一方の価値へ気づける、控えめな導線を考えた。</p></div>
       </div>
       <p class="quiet-note" data-i18n="researchNote">旧サイトの確認内容と、そこからの分析・仮説を分けて記載しています。実物の旧サイト画面や当時のワイヤーフレームは再現していません。</p>
     </section>
@@ -119,5 +119,50 @@
     </section>
   </main>
   <footer class="detail-footer"><a href="./index.html">← BACK TO PORTFOLIO</a><span>inimu / CASE STUDY</span></footer>
+  <script>
+    (() => {
+      const editorial = {
+        ja: {
+          overviewFact: '学校課題を基にした、非公式の提案プロジェクト',
+          role: '企画、リサーチ、情報設計、UIデザイン、実装',
+          overviewLead: '浅草のフレグランスショップ inimu の、Webサイト情報設計とマーケティング再設計。',
+          purpose: 'ワークショップの予約数向上という依頼課題を起点に、物販・体験・ブランドの関係を整理する',
+          focus: 'INTRODUCTION / SHOP / EXPERIENCEの情報構造と相互回遊',
+          status: '提案サイトを制作。施策の効果は未検証。',
+          sourceNote: '学校課題を基にした非公式の提案制作です。検討途中で対象サイトがリニューアルされたため、旧サイトの観察と、その後に制作した提案サイトを分けて記載しています。月間来客数・客単価など、出典を確認できない数値は掲載していません。',
+          researchFactTitle: '調査・確認できたこと',
+          researchFact: '物販、ワークショップ、素材、地域、職人など、inimuには複数の価値がある。旧サイトの観察では、SHOPとEXPERIENCEの間を行き来する入口は限られていた。',
+          researchFactNote: 'ここで述べているのは、提案書と当時確認できたサイト情報に基づく観察です。予約離脱の原因や数値的な傾向を示すものではありません。',
+          researchInsightTitle: '目的を果たしたあと、別の価値にも自然に出会えるか。',
+          researchInsight: '予約導線だけを整えても、ワークショップで得られる体験の価値が伝わらなければ、予約行動にはつながりにくい可能性がある。',
+          researchInsightSecond: '訪問目的に合う情報を先に提示しながら、まだ知らなかった商品や体験にも気づける構造が必要だと考えた。',
+          researchInsightNote: 'これは調査事実ではなく、観察から導いたUX仮説です。予約数・購買・ページ遷移の改善効果を検証したものではありません。',
+          researchNote: '旧サイトの観察結果と、そこから導いたUX仮説・設計判断を区別しています。初期デザイン案は提案者自身の検討案であり、旧サイトの観察結果ではありません。予約離脱の原因や改善効果は未検証です。'
+        },
+        en: {
+          overviewFact: 'An unofficial proposal project based on a school assignment',
+          role: 'Planning, research, information architecture, UI design, and implementation',
+          overviewLead: 'Information architecture and marketing redesign for inimu, a fragrance shop in Asakusa.',
+          purpose: 'Starting from the brief to increase workshop reservations, clarify the roles of retail, experience, and brand.',
+          focus: 'INTRODUCTION / SHOP / EXPERIENCE information structure and cross-discovery',
+          status: 'Proposal site produced. Effects remain unverified.',
+          sourceNote: 'This is an unofficial proposal based on a school assignment. The subject site was renewed during the project, so observations of the previous site are separated from the proposal site created afterward. No monthly visitor or average-spend figures are included without a verifiable source.',
+          researchFactTitle: 'What the research and review confirmed',
+          researchFact: 'inimu had several values to communicate: retail, workshops, materials, place, and makers. In the previous-site review, pathways between SHOP and EXPERIENCE were limited.',
+          researchFactNote: 'These are observations based on the proposal and the site available at the time—not evidence of reservation drop-off or quantified behavior.',
+          researchInsightTitle: 'After fulfilling an initial purpose, can visitors discover another value naturally?',
+          researchInsight: 'Improving the reservation path alone may not lead to action if the value of the workshop experience is not communicated clearly.',
+          researchInsightSecond: 'The structure should answer the visitor’s immediate purpose while allowing products or experiences they did not yet know about to surface.',
+          researchInsightNote: 'This is a UX hypothesis derived from observation, not a measured result. No improvement in reservations, purchases, or page transitions has been verified.',
+          researchNote: 'Previous-site observations are separated from the UX hypotheses and design judgments derived from them. The initial design concept was the proposer’s own exploration, not an observation of the previous site. Reservation drop-off and improvement effects remain unverified.'
+        }
+      };
+      const applyEditorial = () => {
+        const lang = document.documentElement.lang === 'en' ? 'en' : 'ja';
+        Object.entries(editorial[lang]).forEach(([key, value]) => document.querySelectorAll(`[data-i18n="${key}"]`).forEach(el => { el.innerHTML = value; }));
+      };
+      window.addEventListener('DOMContentLoaded', () => { applyEditorial(); document.querySelectorAll('.locale').forEach(btn => btn.addEventListener('click', () => setTimeout(applyEditorial, 0))); });
+    })();
+  </script>
 </body>
 </html>
