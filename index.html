@@ -13,7 +13,7 @@
     <a class="wordmark" href="index.html" aria-label="Portfolio home">PORTFOLIO / 2026</a>
     <nav class="main-nav" aria-label="メインナビゲーション">
       <a href="#work" data-i18n="navWork">WORK</a>
-      <span class="nav-disabled" aria-label="About is not available yet" data-i18n="navAbout">ABOUT</span>
+      <a href="#about" data-i18n="navAbout">ABOUT</a>
       <span class="nav-disabled" aria-label="Contact is not available yet" data-i18n="navContact">CONTACT</span>
       <span class="nav-rule" aria-hidden="true"></span>
       <div class="locale-switcher" aria-label="Language selector">
@@ -57,8 +57,52 @@
         </div>
       </article>
     </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-heading">
+        <p class="about-index">03 / ABOUT</p>
+        <h2 id="about-title" data-i18n="aboutTitle">画面の外まで、<br>設計する。</h2>
+      </div>
+      <div class="about-copy">
+        <p data-i18n="aboutIntro">便利な仕組みが、誰かの負担になることがある。</p>
+        <p data-i18n="aboutBackground">企業での事務、カスタマーサポート、接客に携わる中で、私が考え続けてきたのは、その裏側にある「なぜ」でした。</p>
+        <p data-i18n="aboutQuestions">なぜ、人はそこで迷うのか。<br>なぜ、その手順が必要なのか。<br>誰かの便利さが、別の誰かの不便になっていないか。</p>
+        <p data-i18n="aboutPractice">今はその問いを、Webデザイン、UX/UI設計、デジタルマーケティングへとつなげています。</p>
+        <p data-i18n="aboutProjects">inimuの提案制作では、予約導線だけでなく、体験の価値が伝わる情報構造を。<br><br>開発中のThe path…では、荷物で手がふさがる旅先でも、片手で迷わず使える操作を考えています。</p>
+        <p class="about-statement" data-i18n="aboutConclusion">クライアントの目的、利用者の心理と行動、現場で働く人の負担。<br>画面の美しさだけで終わらない、意味のある仕組みをつくりたい。</p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer"><span>© 2026</span><span>PORTFOLIO</span></footer>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const aboutTitle = document.getElementById('about-title');
+      const updateAboutTitle = () => { aboutTitle.innerHTML = document.documentElement.lang === 'en' ? 'Design beyond<br>the screen.' : '画面の外まで、<br>設計する。'; };
+      document.querySelectorAll('.locale').forEach(button => button.addEventListener('click', () => setTimeout(updateAboutTitle, 0)));
+      const aboutCopy = {
+        ja: {
+          aboutIntro: '便利な仕組みが、誰かの負担になることがある。',
+          aboutBackground: '企業での事務、カスタマーサポート、接客に携わる中で、私が考え続けてきたのは、その裏側にある「なぜ」でした。',
+          aboutQuestions: 'なぜ、人はそこで迷うのか。<br>なぜ、その手順が必要なのか。<br>誰かの便利さが、別の誰かの不便になっていないか。',
+          aboutPractice: '今はその問いを、Webデザイン、UX/UI設計、デジタルマーケティングへとつなげています。',
+          aboutProjects: 'inimuの提案制作では、予約導線だけでなく、体験の価値が伝わる情報構造を。<br><br>開発中のThe path…では、荷物で手がふさがる旅先でも、片手で迷わず使える操作を考えています。',
+          aboutConclusion: 'クライアントの目的、利用者の心理と行動、現場で働く人の負担。<br>画面の美しさだけで終わらない、意味のある仕組みをつくりたい。'
+        },
+        en: {
+          aboutIntro: 'A useful system can become someone else’s burden.',
+          aboutBackground: 'Through roles in corporate administration, customer support, and customer service, I have continued to ask why things work the way they do.',
+          aboutQuestions: 'Why do people hesitate at that point?<br>Why is this process necessary?<br>Could someone’s convenience be creating inconvenience for someone else?',
+          aboutPractice: 'Today, I bring these questions to web design, UX/UI design, and digital marketing.',
+          aboutProjects: 'For the inimu proposal, I explored an information structure that communicates the value of the experience—not only the path to reservation.<br><br>For the developing travel app The path…, I am considering interactions that remain easy to use with one hand, even while carrying luggage.',
+          aboutConclusion: 'The client’s objectives, the user’s psychology and behavior, and the burden on the people working on the ground.<br>I want to create meaningful systems that do not end with the beauty of the screen.'
+        }
+      };
+      const updateAboutCopy = () => { const copy = aboutCopy[document.documentElement.lang === 'en' ? 'en' : 'ja']; Object.entries(copy).forEach(([key, value]) => document.querySelectorAll(`[data-i18n="${key}"]`).forEach(el => { el.innerHTML = value; })); };
+      document.querySelectorAll('.locale').forEach(button => button.addEventListener('click', () => setTimeout(updateAboutCopy, 0)));
+      updateAboutTitle();
+      updateAboutCopy();
+    });
+  </script>
 </body>
 </html>
