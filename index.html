@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="余白に、意図を。課題を読み解き、体験を設計するポートフォリオ。">
-  <title>PORTFOLIO / 2026</title>
+  <meta name="description" content="the path… — Web Design / UX / Digital Strategy">
+  <title>the path…</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Portfolio home">PORTFOLIO / 2026</a>
+    <a class="wordmark" href="index.html" aria-label="the path… home">the path…</a>
     <nav class="main-nav" aria-label="メインナビゲーション">
       <a href="#work" data-i18n="navWork">WORK</a>
       <a href="#about" data-i18n="navAbout">ABOUT</a>
@@ -79,9 +79,26 @@
       </div>
     </section>
 
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="services-heading">
+        <p class="services-index">04 / SERVICES</p>
+        <h2 id="services-title" data-i18n="servicesTitle">課題を、形にする。</h2>
+      </div>
+      <div class="services-copy">
+        <p class="services-lead" data-i18n="servicesLead">企画から制作まで、目的に合わせて考えます。</p>
+        <div class="service-list">
+          <div class="service-item"><h3 data-i18n="serviceWebTitle">Webサイト制作・改善</h3><p data-i18n="serviceWebText">新規サイト制作、既存サイトの構成やデザインの見直し</p></div>
+          <div class="service-item"><h3 data-i18n="serviceUxTitle">UX / UI・情報設計</h3><p data-i18n="serviceUxText">使いやすさ、情報の整理、ユーザー導線の改善提案</p></div>
+          <div class="service-item"><h3 data-i18n="serviceFlowTitle">予約・問い合わせ導線の設計</h3><p data-i18n="serviceFlowText">利用者と運営側、双方の負担を考えた仕組みづくり</p></div>
+        </div>
+        <p class="services-note" data-i18n="servicesNote">ご相談内容に応じて、対応範囲をご提案します。</p>
+        <a class="services-contact-link" href="#contact" data-i18n="servicesCta">CONTACT ↗</a>
+      </div>
+    </section>
+
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="contact-heading">
-        <p class="contact-index">04 / CONTACT</p>
+        <p class="contact-index">05 / CONTACT</p>
         <h2 id="contact-title" data-i18n="contactTitle"><span class="contact-title-line">「こんなこと、</span><br><span class="contact-title-line">できる？」から。</span></h2>
       </div>
       <div class="contact-copy">
@@ -96,13 +113,13 @@
           <div class="form-field"><label for="contact-company"><span data-i18n="formCompany">会社名・店舗名</span><small data-i18n="optional">任意</small></label><input id="contact-company" name="company" type="text" autocomplete="organization"></div>
           <fieldset class="form-field form-checks"><legend><span data-i18n="formConsultation">ご相談内容</span><em data-i18n="required">必須</em></legend><div class="check-grid">
             <label><input type="checkbox" name="consultation" value="website"><span data-i18n="optionWebsite">新しいWebサイトを制作したい</span></label>
-            <label><input type="checkbox" name="consultation" value="renewal"><span data-i18n="optionRenewal">既存サイトを改善・リニューアルしたい</span></label>
-            <label><input type="checkbox" name="consultation" value="ux"><span data-i18n="optionUx">UX/UIやサイトの導線を見直したい</span></label>
-            <label><input type="checkbox" name="consultation" value="conversion"><span data-i18n="optionConversion">予約・問い合わせを増やしたい</span></label>
+            <label><input type="checkbox" name="consultation" value="renewal"><span data-i18n="optionRenewal">既存のWebサイトを改善したい</span></label>
+            <label><input type="checkbox" name="consultation" value="ux"><span data-i18n="optionUx">UX / UI・情報設計を見直したい</span></label>
+            <label><input type="checkbox" name="consultation" value="conversion"><span data-i18n="optionConversion">予約・問い合わせの導線を改善したい</span></label>
             <label><input type="checkbox" name="consultation" value="efficiency"><span data-i18n="optionEfficiency">業務の効率化について相談したい</span></label>
             <label><input type="checkbox" name="consultation" value="other"><span data-i18n="optionOther">その他・まだ決まっていない</span></label>
           </div></fieldset>
-          <div class="form-field"><label for="contact-message"><span data-i18n="formMessage">現在のお悩み・実現したいこと</span><em data-i18n="required">必須</em></label><textarea id="contact-message" name="message" rows="5" required></textarea></div>
+          <div class="form-field"><label for="contact-message"><span data-i18n="formMessage">現在のお悩み・実現したいこと</span><em data-i18n="required">必須</em></label><small class="form-hint" data-i18n="formMessageHint">まだ内容が決まっていなくても大丈夫です。気になっていることを一言からお聞かせください。</small><textarea id="contact-message" name="message" rows="5" required></textarea></div>
           <div class="form-row"><div class="form-field"><label for="contact-budget"><span data-i18n="formBudget">ご予算の目安</span><small data-i18n="optional">任意</small></label><select id="contact-budget" name="budget"><option value="" data-i18n="selectUnset">未定</option><option data-i18n="budgetUnder">10万円未満</option><option data-i18n="budget10to20">10万〜20万円</option><option data-i18n="budget20to30">20万〜30万円</option><option data-i18n="budgetOver30">30万円以上</option></select></div><div class="form-field"><label for="contact-timing"><span data-i18n="formTiming">いつ頃の公開をご希望ですか？</span><small data-i18n="optional">任意</small></label><select id="contact-timing" name="timing"><option value="" data-i18n="selectUnset">未定</option><option value="within-month" data-i18n="timingMonth">1か月以内</option><option value="one-three" data-i18n="timingOneThree">1〜3か月以内</option><option value="after-three" data-i18n="timingAfterThree">3か月以降</option><option value="specific" data-i18n="timingSpecific">希望日が決まっている</option></select><input class="date-input" id="contact-date" name="date" type="date" aria-label="希望日" hidden></div></div>
           <div class="form-field"><label for="contact-url"><span data-i18n="formUrl">Webサイト・SNSのURL</span><small data-i18n="optional">任意</small></label><input id="contact-url" name="url" type="url" inputmode="url"></div>
           <label class="consent"><input type="checkbox" name="consent" required><a class="privacy-consent-link" href="./privacy.html" data-i18n="consent">個人情報の取り扱いに同意する</a><em data-i18n="required">必須</em></label>
@@ -113,7 +130,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><span>© 2026</span><span class="footer-signature">Emiko Nakagawa</span><span>PORTFOLIO</span></footer>
+  <footer class="site-footer"><span>© 2026</span><span class="footer-signature">the path…</span><span>PORTFOLIO</span></footer>
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const aboutTitle = document.getElementById('about-title');
@@ -131,7 +148,7 @@
           contactLead: 'その小さな疑問が、新しい仕組みのはじまりになるかもしれません。',
           contactBody: 'Web・UX/UI・業務改善に関するご相談をお待ちしています。',
           contactCta: 'SEND AN INQUIRY <i aria-hidden="true">↗</i>',
-          contactNote: '公開準備中', formName:'お名前', formEmail:'メールアドレス', formCompany:'会社名・店舗名', formConsultation:'ご相談内容', formMessage:'現在のお悩み・実現したいこと', formBudget:'ご予算の目安', formTiming:'いつ頃の公開をご希望ですか？', formUrl:'Webサイト・SNSのURL', required:'必須', optional:'任意', optionWebsite:'新しいWebサイトを制作したい', optionRenewal:'既存サイトを改善・リニューアルしたい', optionUx:'UX/UIやサイトの導線を見直したい', optionConversion:'予約・問い合わせを増やしたい', optionEfficiency:'業務の効率化について相談したい', optionOther:'その他・まだ決まっていない', selectUnset:'未定', budgetUnder:'10万円未満', budget10to20:'10万〜20万円', budget20to30:'20万〜30万円', budgetOver30:'30万円以上', timingMonth:'1か月以内', timingOneThree:'1〜3か月以内', timingAfterThree:'3か月以降', timingSpecific:'希望日が決まっている', consent:'個人情報の取り扱いに同意する', formSubmit:'送信する'
+          contactNote: '公開準備中', formName:'お名前', formEmail:'メールアドレス', formCompany:'会社名・店舗名', formConsultation:'ご相談内容', formMessage:'現在のお悩み・実現したいこと', formMessageHint:'まだ内容が決まっていなくても大丈夫です。気になっていることを一言からお聞かせください。', formBudget:'ご予算の目安', formTiming:'いつ頃の公開をご希望ですか？', formUrl:'Webサイト・SNSのURL', required:'必須', optional:'任意', optionWebsite:'新しいWebサイトを制作したい', optionRenewal:'既存のWebサイトを改善したい', optionUx:'UX / UI・情報設計を見直したい', optionConversion:'予約・問い合わせの導線を改善したい', optionEfficiency:'業務の効率化について相談したい', optionOther:'その他・まだ決まっていない', selectUnset:'未定', budgetUnder:'10万円未満', budget10to20:'10万〜20万円', budget20to30:'20万〜30万円', budgetOver30:'30万円以上', timingMonth:'1か月以内', timingOneThree:'1〜3か月以内', timingAfterThree:'3か月以降', timingSpecific:'希望日が決まっている', consent:'個人情報の取り扱いに同意する', formSubmit:'送信する'
         },
         en: {
           aboutIntro: 'A useful system can become someone else’s burden.',
@@ -147,7 +164,7 @@
           contactLead: 'A simple question might be the beginning of something new.',
           contactBody: 'I’m open to conversations about web design, UX/UI, and improving how things work.',
           contactCta: 'SEND AN INQUIRY <i aria-hidden="true">↗</i>',
-          contactNote: 'Preparing for publication', formName:'Name', formEmail:'Email address', formCompany:'Company / shop', formConsultation:'What can I help with?', formMessage:'What would you like to solve or achieve?', formBudget:'Approximate budget', formTiming:'When would you like to launch?', formUrl:'Website / social URL', required:'Required', optional:'Optional', optionWebsite:'I want to create a new website', optionRenewal:'I want to improve or renew an existing site', optionUx:'I want to review the UX/UI or site flow', optionConversion:'I want to increase reservations or inquiries', optionEfficiency:'I want to discuss improving operational efficiency', optionOther:'Other / not decided yet', selectUnset:'Undecided', budgetUnder:'Under ¥100,000', budget10to20:'¥100,000–¥200,000', budget20to30:'¥200,000–¥300,000', budgetOver30:'¥300,000 or more', timingMonth:'Within one month', timingOneThree:'Within 1–3 months', timingAfterThree:'After 3 months', timingSpecific:'I have a preferred date', consent:'I agree to the handling of personal information', formSubmit:'Send inquiry'
+          contactNote: 'Preparing for publication', formName:'Name', formEmail:'Email address', formCompany:'Company / shop', formConsultation:'What can I help with?', formMessage:'What would you like to solve or achieve?', formMessageHint:'It is okay if you are not sure yet. Tell me what is on your mind, even in a sentence.', formBudget:'Approximate budget', formTiming:'When would you like to launch?', formUrl:'Website / social URL', required:'Required', optional:'Optional', optionWebsite:'I want to create a new website', optionRenewal:'I want to improve an existing website', optionUx:'I want to review the UX / UI and information architecture', optionConversion:'I want to improve the reservation or inquiry flow', optionEfficiency:'I want to discuss improving operational efficiency', optionOther:'Other / not decided yet', selectUnset:'Undecided', budgetUnder:'Under ¥100,000', budget10to20:'¥100,000–¥200,000', budget20to30:'¥200,000–¥300,000', budgetOver30:'¥300,000 or more', timingMonth:'Within one month', timingOneThree:'Within 1–3 months', timingAfterThree:'After 3 months', timingSpecific:'I have a preferred date', consent:'I agree to the handling of personal information', formSubmit:'Send inquiry'
         }
       };
       aboutCopy.ja.aboutIntro = '便利な仕組みが、誰かの負担になることがある。';
