@@ -105,7 +105,18 @@
         <figure class="screen loop-screen"><img src="assets/inimu/site-experience-to-shop.jpg" alt="EXPERIENCEからSHOPへの導線"><figcaption><b>EXPERIENCE → SHOP</b><span data-i18n="screenExpToShop">つくったあとに、出会うへ。予約の流れは遮らない。</span></figcaption></figure>
       </div>
       <p class="source-note" data-i18n="finalNote">掲載画像は画面キャプチャと制作中のScene 04素材です。実際の操作体験は公開サイトで確認できます。</p>
-      <p class="live-site"><a href="https://jasminbb564bb-cell.github.io/inimu-workshop/" target="_blank" rel="noopener" data-i18n="liveSite">LIVE SITE / 公開サイトを確認する ↗</a></p>
+      <div class="project-explore" aria-labelledby="explore-project-title">
+        <p class="explore-label" id="explore-project-title">EXPLORE THE PROJECT</p>
+        <div class="explore-links">
+          <a href="https://jasminbb564bb-cell.github.io/inimu-workshop/" target="_blank" rel="noopener noreferrer">
+            <span class="explore-link-copy"><strong data-i18n="liveSite">VIEW WEBSITE</strong><small data-i18n="liveSiteNote">実際に制作したWebサイト</small></span><span class="explore-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="https://jasminbb564bb-cell.github.io/inimu-workshop/proposal-preview/" target="_blank" rel="noopener noreferrer">
+            <span class="explore-link-copy"><strong data-i18n="fullProposal">VIEW FULL PROPOSAL</strong><small data-i18n="fullProposalNote">課題分析・UX設計・詳細企画提案</small></span><span class="explore-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p class="explore-note" data-i18n="exploreNote">学校課題として制作した企画・提案サイトです。予約導線、体験後アンケート、顧客理解、データ活用、継続的な改善の構想を含みます。未実装の構想は成果として扱っていません。</p>
+      </div>
     </section>
 
     <section class="case-section validation-section" aria-labelledby="validation-title">
@@ -137,7 +148,9 @@
           researchInsight: '予約導線だけを整えても、ワークショップで得られる体験の価値が伝わらなければ、予約行動にはつながりにくい可能性がある。',
           researchInsightSecond: '訪問目的に合う情報を先に提示しながら、まだ知らなかった商品や体験にも気づける構造が必要だと考えた。',
           researchInsightNote: 'これは調査事実ではなく、観察から導いたUX仮説です。予約数・購買・ページ遷移の改善効果を検証したものではありません。',
-          researchNote: '旧サイトの観察結果と、そこから導いたUX仮説・設計判断を区別しています。初期デザイン案は提案者自身の検討案であり、旧サイトの観察結果ではありません。予約離脱の原因や改善効果は未検証です。'
+          researchNote: '旧サイトの観察結果と、そこから導いたUX仮説・設計判断を区別しています。初期デザイン案は提案者自身の検討案であり、旧サイトの観察結果ではありません。予約離脱の原因や改善効果は未検証です。',
+          liveSite: 'VIEW WEBSITE', liveSiteNote: '実際に制作したWebサイト', fullProposal: 'VIEW FULL PROPOSAL', fullProposalNote: '課題分析・UX設計・詳細企画提案',
+          exploreNote: '学校課題として制作した企画・提案サイトです。予約導線、体験後アンケート、顧客理解、データ活用、継続的な改善の構想を含みます。未実装の構想は成果として扱っていません。'
         },
         en: {
           overviewFact: 'An unofficial proposal project based on a school assignment',
@@ -154,7 +167,9 @@
           researchInsight: 'Improving the reservation path alone may not lead to action if the value of the workshop experience is not communicated clearly.',
           researchInsightSecond: 'The structure should answer the visitor’s immediate purpose while allowing products or experiences they did not yet know about to surface.',
           researchInsightNote: 'This is a UX hypothesis derived from observation, not a measured result. No improvement in reservations, purchases, or page transitions has been verified.',
-          researchNote: 'Previous-site observations are separated from the UX hypotheses and design judgments derived from them. The initial design concept was the proposer’s own exploration, not an observation of the previous site. Reservation drop-off and improvement effects remain unverified.'
+          researchNote: 'Previous-site observations are separated from the UX hypotheses and design judgments derived from them. The initial design concept was the proposer’s own exploration, not an observation of the previous site. Reservation drop-off and improvement effects remain unverified.',
+          liveSite: 'VIEW WEBSITE', liveSiteNote: 'The website produced for this project', fullProposal: 'VIEW FULL PROPOSAL', fullProposalNote: 'Brief analysis, UX design, and detailed proposal',
+          exploreNote: 'This is a proposal site created as a school project. The full proposal includes reservation-flow considerations, post-experience surveys, customer understanding, data use, and continuous-improvement ideas. Unimplemented ideas are not presented as outcomes.'
         }
       };
       const applyEditorial = () => {
