@@ -23,3 +23,6 @@ translations.en.aboutConclusion='The client’s objectives, the user’s psychol
 const applyLanguage = (lang) => { const copy=translations[lang]; document.documentElement.lang=lang==='ja'?'ja':'en'; document.querySelectorAll('[data-i18n]').forEach(el=>{ if(copy[el.dataset.i18n]) el.innerHTML=copy[el.dataset.i18n]; }); document.querySelectorAll('.locale').forEach(btn=>{ const active=btn.dataset.lang===lang; btn.classList.toggle('is-active',active); btn.setAttribute('aria-pressed',String(active)); }); localStorage.setItem('portfolio-language',lang); };
 document.querySelectorAll('.locale').forEach(btn=>btn.addEventListener('click',()=>applyLanguage(btn.dataset.lang)));
 applyLanguage(localStorage.getItem('portfolio-language') || 'ja');
+translations.ja.servicesAnalytics='Webサイトの制作だけでなく、GA4を活用した計測設計にも取り組んでいます。自身のポートフォリオでは、閲覧・作品への関心・お問い合わせまでの行動を計測できる仕組みを実装しています。';
+translations.en.servicesAnalytics='Beyond website production, I also work on GA4 measurement design. For my portfolio, I implemented a way to measure behavior from page views and project interest through to inquiries.';
+applyLanguage(document.documentElement.lang === 'en' ? 'en' : 'ja');
