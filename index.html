@@ -16,6 +16,7 @@
   <meta name="twitter:description" content="Web Design / UX / Digital Strategy">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
+  <script defer src="analytics-consent.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -53,8 +54,8 @@
           <p class="project-description" data-i18n="inimuDescription">香りのある暮らしを、日常に。<br>ブランド設計 / Webデザイン / 体験設計</p>
           <div class="project-links" aria-label="inimu project links">
             <a class="project-link" href="./inimu.html" aria-label="View inimu project"><span data-i18n="viewProject">VIEW PROJECT</span><i aria-hidden="true">↗</i></a>
-            <a href="https://jasminbb564bb-cell.github.io/inimu-workshop/" target="_blank" rel="noopener noreferrer"><span data-i18n="viewWebsite">VIEW WEBSITE</span><i aria-hidden="true">↗</i></a>
-            <a href="https://jasminbb564bb-cell.github.io/inimu-workshop/proposal-preview/" target="_blank" rel="noopener noreferrer"><span data-i18n="viewFullProposal">VIEW FULL PROPOSAL</span><i aria-hidden="true">↗</i></a>
+            <a href="https://jasminbb564bb-cell.github.io/inimu-workshop/" target="_blank" rel="noopener noreferrer" data-analytics-event="view_inimu_website" data-analytics-location="inimu_website"><span data-i18n="viewWebsite">VIEW WEBSITE</span><i aria-hidden="true">↗</i></a>
+            <a href="https://jasminbb564bb-cell.github.io/inimu-workshop/proposal-preview/" target="_blank" rel="noopener noreferrer" data-analytics-event="view_inimu_proposal" data-analytics-location="inimu_proposal"><span data-i18n="viewFullProposal">VIEW FULL PROPOSAL</span><i aria-hidden="true">↗</i></a>
           </div>
         </div>
       </article>
@@ -213,6 +214,7 @@
           if (!response.ok) throw new Error('Formspree request failed');
           contactForm.reset(); updateDateField();
           formStatus.textContent = document.documentElement.lang === 'en' ? 'Your inquiry has been received.' : 'お問い合わせを受け付けました。';
+          if (typeof window.trackAnalyticsEvent === 'function') window.trackAnalyticsEvent('contact_form_submit');
         } catch (error) {
           formStatus.textContent = document.documentElement.lang === 'en' ? 'Your inquiry may not have been delivered. Please try again.' : 'お問い合わせが届いていない可能性があります。時間をおいて再度お試しください。';
         } finally { submitButton.disabled = false; }
